@@ -1,0 +1,286 @@
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.container img {
+    width: 100px !important; 
+}
+
+/* .cart_container {
+    padding: 20px;
+} */
+
+.cart_container h2,
+.cart_container h3 {
+    padding: 10px;
+}
+
+.cart_container hr {
+    margin: 10px;
+}
+
+/* .subtotal {
+    padding: 20px;
+    min-width: 300px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid rgb(193, 193, 193);
+    background-color: rgb(242, 241, 241);
+    border-radius: 5px;
+} */
+
+.subtotal a {
+    text-align: center;
+    width: 100%;
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.subtotal a:hover {
+    background: var(--primary-shade);
+}
+
+.subtotal > div,
+.subtotal span {
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (max-width: 968px) {
+    .container {
+        flex-direction: column;
+        order: 1;
+    }
+}
+
+
+
+/* ✅ Fix the Checkout Button to Match Amazon */
+/* .checkoutButton {
+    text-align: center;
+    width: 100%;
+    border: none;
+    background-color: #f0c14b; 
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.checkoutButton:hover {
+    background: #ddb347;
+} */
+
+
+
+/* ******************************************************************* */
+
+/* .cart_container {
+    flex: 2;
+    padding: 20px;
+    width: 75%; 
+}
+
+
+.cart_product {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 15px;
+    border-bottom: 1px solid #ddd; 
+}
+
+
+.cart_product img {
+    width: 150px !important; 
+    height: auto;
+    object-fit: contain;
+}
+
+
+.subtotal {
+    flex: 1;
+    padding: 20px;
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgb(193, 193, 193);
+    background-color: rgb(242, 241, 241);
+    border-radius: 5px;
+    position: relative;
+    right: 0;
+    margin-left: 20px;
+}
+
+
+.checkoutButton {
+    text-align: center;
+    width: 100%;
+    border: none;
+    background-color: #f0c14b;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.checkoutButton:hover {
+    background: #ddb347;
+} */
+
+
+/* ************************************************************************* */
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Left Side - Shopping Basket */
+.cart_container {
+    flex: 2;
+    padding: 20px;
+    width: 75%;
+}
+
+.cart_container h2,
+.cart_container h3 {
+    padding: 10px 0;
+}
+
+.cart_container hr {
+    margin: 10px 0;
+}
+
+/* Product List - Ensure It Takes Full Width */
+.cart_product {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Image Size for Products */
+.cart_product img {
+    width: 150px !important;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Right Side - Subtotal Section */
+.subtotal {
+    flex: 1;
+    padding: 20px;
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgb(193, 193, 193);
+    background-color: rgb(242, 241, 241);
+    border-radius: 5px;
+    position: relative;
+    margin-left: 20px; /* ✅ Moves the subtotal box closer to products */
+}
+
+/* Checkout Button */
+.checkoutButton {
+    text-align: center;
+    width: 100%;
+    border: none;
+    background-color: #f0c14b; /* ✅ Amazon Yellow */
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.checkoutButton:hover {
+    background: #ddb347;
+}
+
+/* Responsive Fix */
+@media screen and (max-width: 968px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart_container {
+        width: 100%;
+    }
+
+    .subtotal {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* ************************************************ */
+
+/* Button Container */
+.btn_container {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  background: transparent;
+  border-radius: 5px;
+}
+
+/* Buttons */
+.btn {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: #ff9900;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  background: #e68a00;
+}
+
+/* Quantity Display */
+.btn_container span {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+  min-width: 20px;
+  text-align: center;
+}
+
+
